@@ -1,10 +1,10 @@
 import axios from "axios";
-require('dotenv').config()
+import {api_key} from "@env"
 
 export default axios.create({
   baseURL: "https://api.yelp.com/v3/businesses",
   headers: {
     Authorization:
-      `Bearer ${process.env.api_key}`,
+      `Bearer ${api_key}`,
   },
 });

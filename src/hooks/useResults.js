@@ -12,7 +12,7 @@ export default () => {
         params: {
           limit: 50,
           term: searchTerm,
-          location: 'kansas city'
+          location: 'san jose'
         }
       });
       setResults(response.data.businesses);
@@ -25,7 +25,7 @@ export default () => {
   // is first rendered.  BAD CODE!
   // searchApi('pasta');
   useEffect(() => {
-    searchApi('bbq');
+    searchApi('pasta');
   }, []);
 
   return [searchApi, results, errorMessage];
